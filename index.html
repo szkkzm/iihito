@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アニメーションテキスト</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fvbg">
+        <div id="firstView">
+            <div>い</div>
+            <div>い</div>
+            <div>人</div>
+            <div>す</div>
+            <div>ぎ</div>
+            <div>る</div>
+            <div>よ</div>
+            <div>展</div>
+        </div>
+    </div>
+    <div id="secondView">
+        <div class="container"> 
+            <div class="item"><img src="./images/1.jpg"><p>Slackの投稿に必ずリアクションする人</p></div>
+            <div class="item"><img src="./images/2.jpg"><p>休憩時間にホワイトボードを消してくれる人</p></div>
+            <div class="item"><img src="./images/3.jpg"><p>最後に戸締まり確認してくれる人</p></div>
+            <div class="item"><img src="./images/1.jpg"><p>Slackの投稿に必ずリアクションする人</p></div>
+            <div class="item"><img src="./images/2.jpg"><p>休憩時間にホワイトボードを消してくれる人</p></div>
+            <div class="item"><img src="./images/3.jpg"><p>最後に戸締まり確認してくれる人</p></div>
+            <div class="item"><img src="./images/1.jpg"><p>Slackの投稿に必ずリアクションする人</p></div>
+            <div class="item"><img src="./images/2.jpg"><p>休憩時間にホワイトボードを消してくれる人</p></div>
+            <div class="item"><img src="./images/3.jpg"><p>最後に戸締まり確認してくれる人</p></div>
+            <div class="item"><img src="./images/1.jpg"><p>Slackの投稿に必ずリアクションする人</p></div>
+            <div class="item"><img src="./images/2.jpg"><p>休憩時間にホワイトボードを消してくれる人</p></div>
+            <div class="item"><img src="./images/3.jpg"><p>最後に戸締まり確認してくれる人</p></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    const element = document.getElementById('secondView');
+
+    setTimeout(()=>{element.scrollIntoView({  
+        behavior: 'smooth'  
+    });},2000);
+
+
+</script>

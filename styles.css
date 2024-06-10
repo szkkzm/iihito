@@ -1,0 +1,100 @@
+body{
+    background-color: #fcfffc;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.fvbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#firstView {
+    color: blue;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    transition: opacity 1s; /* opacity要素(不透明度)の変更を3秒間かけて行う */
+}
+
+#firstView div {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+#firstView div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#firstView div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#firstView div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#firstView div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+#firstView div:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+#firstView div:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+#firstView div:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+#firstView div:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+
+ .item {
+    height: 400px; 
+    width:  250px;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; 
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, .4)
+ }
+ .item p{
+    color: #000000;
+    margin: 20px 20px 0 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+ }
+ .item img{
+    margin: 30px auto;
+    height: 60%;
+    width: 80%;
+    display: block;
+    object-fit: cover;
+    filter: saturate(70%) contrast(250%) grayscale(100%);
+ }
